@@ -1,5 +1,3 @@
-## About Me
-
 I defended my PhD thesis on physics-based fluid simulation and physics-aware fluid animation in December 2019. I've been working on high-fidelity multi-physics simulation technologies in the VFX industry since then. For more details, find me on [LinkedIn](https://www.linkedin.com/in/zhai-xiao/).
 
 ## Publication
