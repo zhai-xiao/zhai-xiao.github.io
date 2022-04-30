@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## About Me
 
-You can use the [editor on GitHub](https://github.com/zhai-xiao/zhai-xiao.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
+I defended my PhD thesis on physics-based fluid simulation and physics-aware fluid animation in December 2019. I've been working on high-fidelity multi-physics simulation technologies in the VFX industry since then. For more details, find me on [LinkedIn](https://www.linkedin.com/in/zhai-xiao/).
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Publication
 
-### Markdown
+Loki: A Unified Multiphysics Simulation Framework for Production. Steve Lesser, Alexey Stomakhin, Gilles Daviet, Joel Wretborn, John Edholm, Noh-hoon Lee, Eston Schweickart, Xiao Zhai, Sean Flynn, and Andrew Moffat. *SIGGRAPH*, 2022.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Simulating Cloth Using Bilinear Elements. Eston Schweickart and Xiao Zhai. *SIGGRAPH*, 2021.
 
-```markdown
-Syntax highlighted code block
+Vectorized Painting with Temporal Diffusion Curves. Yingjia Li, Xiao Zhai, Fei Hou, Yawen Liu, Aimin Hao, and Hong Qin. *IEEE Transactions on Visualization and Computer Graphics*, 2019.
 
-# Header 1
-## Header 2
-### Header 3
+Fluid Simulation with Adaptive Staggered Power Particles on GPUs. Xiao Zhai, Fei Hou, Hong Qin, and Aimin Hao. *IEEE Transactions on Visualization and Computer Graphics*, 2018.
 
-- Bulleted
-- List
+Multi-Task Learning on Monocular Water Images: Surface Reconstruction and Image Synthesis. Xueguang Xie, Xiao Zhai, Fei Hou, Aimin Hao, and Hong Qin. *Computer Animation and Virtual Worlds*, 2019.
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zhai-xiao/zhai-xiao.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Inverse Modelling of Incompressible Gas Flow in Subspace. Xiao Zhai, Fei Hou, Hong Qin, and Aimin Hao. *Computer Graphics Forum*, 2017.
