@@ -1,4 +1,6 @@
 title: Xiao Zhai
+logo: /assets/img/logo.jpeg
 description: Simulation Researcher at Weta Digital
+show_downloads: false
 google_analytics:
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
