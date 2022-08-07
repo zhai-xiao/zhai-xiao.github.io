@@ -2,7 +2,8 @@ I defended my PhD thesis on physics-based fluid simulation and physics-aware flu
 
 ## Publication
 
-Loki: A Unified Multiphysics Simulation Framework for Production. Steve Lesser, Alexey Stomakhin, Gilles Daviet, Joel Wretborn, John Edholm, Noh-hoon Lee, Eston Schweickart, Xiao Zhai, Sean Flynn, and Andrew Moffat. *SIGGRAPH*, 2022.
+Loki: A Unified Multiphysics Simulation Framework for Production. Steve Lesser, Alexey Stomakhin, Gilles Daviet, Joel Wretborn, John Edholm, Noh-hoon Lee, Eston Schweickart, Xiao Zhai, Sean Flynn, and Andrew Moffat. *ACM Transactions on Graphics*, 2022. Simulating Cloth Using Bilinear Elements. Eston Schweickart and Xiao Zhai. *SIGGRAPH*, 2021.
+[Link](https://dl.acm.org/doi/abs/10.1145/3528223.3530058) [PDF](http://alexey.stomakhin.com/research/siggraph2022_loki.pdf)
 
 Simulating Cloth Using Bilinear Elements. Eston Schweickart and Xiao Zhai. *SIGGRAPH*, 2021.
 [Link](https://dl.acm.org/doi/10.1145/3450623.3464675) [PDF](/assets/publication/%5B2021%5D%5BSIGGRAPH%5DSimulating%20Cloth%20Using%20Bilinear%20Elements.pdf) [Supplement](/assets/publication/%5B2021%5D%5BSIGGRAPH%5D%5BSupplement%5DSimulating%20Cloth%20Using%20Bilinear%20Elements.pdf)
