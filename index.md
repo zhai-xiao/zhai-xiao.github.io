@@ -2,7 +2,7 @@ I am a researcher at [Unity](https://unity.com/) X [Weta Digital](https://www.we
 
 ## Publication
 
-Loki: A Unified Multiphysics Simulation Framework for Production. Steve Lesser, Alexey Stomakhin, Gilles Daviet, Joel Wretborn, John Edholm, Noh-hoon Lee, Eston Schweickart, Xiao Zhai, Sean Flynn, and Andrew Moffat. *ACM Transactions on Graphics*, 2022. Simulating Cloth Using Bilinear Elements. Eston Schweickart and Xiao Zhai. *SIGGRAPH*, 2021.
+Loki: A Unified Multiphysics Simulation Framework for Production. Steve Lesser, Alexey Stomakhin, Gilles Daviet, Joel Wretborn, John Edholm, Noh-hoon Lee, Eston Schweickart, Xiao Zhai, Sean Flynn, and Andrew Moffat. *ACM Transactions on Graphics*, 2022.
 [Link](https://dl.acm.org/doi/abs/10.1145/3528223.3530058) [PDF](http://alexey.stomakhin.com/research/siggraph2022_loki.pdf)
 
 Simulating Cloth Using Bilinear Elements. Eston Schweickart and Xiao Zhai. *SIGGRAPH*, 2021.
