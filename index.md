@@ -2,11 +2,14 @@ I am a researcher at [Unity](https://unity.com/) X [Weta Digital](https://www.we
 
 ## Publication
 
-Loki: A Unified Multiphysics Simulation Framework for Production. Steve Lesser, Alexey Stomakhin, Gilles Daviet, Joel Wretborn, John Edholm, Noh-hoon Lee, Eston Schweickart, Xiao Zhai, Sean Flynn, and Andrew Moffat. *ACM Transactions on Graphics*, 2022.
-[Link](https://dl.acm.org/doi/abs/10.1145/3528223.3530058) [PDF](http://alexey.stomakhin.com/research/siggraph2022_loki.pdf)
+Avatar: The Way of Hair, Cloth, and Coupled Simulation. Xiao Zhai, Eston Schweickart, Nikolay Ilinov, Joel Wretborn, Alexey Stomakhin, John Homer, Jefri Haryono, and Julian Butler. *SIGGRAPH Talks*, 2023.
+[Link](https://dl.acm.org/doi/10.1145/3587421.3595408) [PDF](/assets/publication/%5B2023%5D%5BSIGGRAPH%5DAvatar%20The%20Way%20Of%20Hair%20Cloth%20And%20Coupled%20Simulation.pdf) [Supplement](/assets/publication/%5B2023%5D%5BSIGGRAPH%5D%5BSupplement%5DAvatar%20The%20Way%20Of%20Hair%20Cloth%20And%20Coupled%20Simulation.pdf) [Talk](https://s2023.siggraph.org/presentation/?id=gensub_120&sess=sess178)
 
-Simulating Cloth Using Bilinear Elements. Eston Schweickart and Xiao Zhai. *SIGGRAPH*, 2021.
-[Link](https://dl.acm.org/doi/10.1145/3450623.3464675) [PDF](/assets/publication/%5B2021%5D%5BSIGGRAPH%5DSimulating%20Cloth%20Using%20Bilinear%20Elements.pdf) [Supplement](/assets/publication/%5B2021%5D%5BSIGGRAPH%5D%5BSupplement%5DSimulating%20Cloth%20Using%20Bilinear%20Elements.pdf)
+Loki: A Unified Multiphysics Simulation Framework for Production. Steve Lesser, Alexey Stomakhin, Gilles Daviet, Joel Wretborn, John Edholm, Noh-hoon Lee, Eston Schweickart, Xiao Zhai, Sean Flynn, and Andrew Moffat. *ACM Transactions on Graphics*, 2022.
+[Link](https://dl.acm.org/doi/abs/10.1145/3528223.3530058) [PDF](http://alexey.stomakhin.com/research/siggraph2022_loki.pdf) [Video](https://www.youtube.com/watch?v=_2TBvSnsLD8&ab_channel=Unity)
+
+Simulating Cloth Using Bilinear Elements. Eston Schweickart and Xiao Zhai. *SIGGRAPH Talks*, 2021.
+[Link](https://dl.acm.org/doi/10.1145/3450623.3464675) [PDF](/assets/publication/%5B2021%5D%5BSIGGRAPH%5DSimulating%20Cloth%20Using%20Bilinear%20Elements.pdf) [Supplement](/assets/publication/%5B2021%5D%5BSIGGRAPH%5D%5BSupplement%5DSimulating%20Cloth%20Using%20Bilinear%20Elements.pdf) [Talk](https://s2021.siggraph.org/presentation/?id=gensub_343&sess=sess191)
 
 Vectorized Painting with Temporal Diffusion Curves. Yingjia Li, Xiao Zhai, Fei Hou, Yawen Liu, Aimin Hao, and Hong Qin. *IEEE Transactions on Visualization and Computer Graphics*, 2019.
 [Link](https://ieeexplore.ieee.org/document/8765801) [PDF](/assets/publication/%5B2019%5D%5BTVCG%5DVectorized%20Painting%20with%20Temporal%20Diffusion%20Curves.pdf) [Video](https://youtu.be/pQvwzhqtNq8)
