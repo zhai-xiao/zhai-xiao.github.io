@@ -3,7 +3,7 @@ I am a researcher at [Unity](https://unity.com/) X [Weta Digital](https://www.we
 ## Publication
 
 Avatar: The Way of Hair, Cloth, and Coupled Simulation. Xiao Zhai, Eston Schweickart, Nikolay Ilinov, Joel Wretborn, Alexey Stomakhin, John Homer, Jefri Haryono, and Julian Butler. *SIGGRAPH Talks*, 2023.
-[Link](https://dl.acm.org/doi/10.1145/3587421.3595408) [PDF](/assets/publication/%5B2023%5D%5BSIGGRAPH%5DAvatar%20The%20Way%20Of%20Hair%20Cloth%20And%20Coupled%20Simulation.pdf) [Supplement](/assets/publication/%5B2023%5D%5BSIGGRAPH%5D%5BSupplement%5DAvatar%20The%20Way%20Of%20Hair%20Cloth%20And%20Coupled%20Simulation.pdf) [Talk](https://s2023.siggraph.org/presentation/?id=gensub_120&sess=sess178)
+[Link](https://dl.acm.org/doi/10.1145/3587421.3595408) [PDF](/assets/publication/%5B2023%5D%5BSIGGRAPH%5DAvatar%20The%20Way%20Of%20Hair%20Cloth%20and%20Coupled%20Simulation.pdf) [Supplement](/assets/publication/%5B2023%5D%5BSIGGRAPH%5D%5BSupplement%5DAvatar%20The%20Way%20Of%20Hair%20Cloth%20and%20Coupled%20Simulation.pdf) [Talk](https://s2023.siggraph.org/presentation/?id=gensub_120&sess=sess178)
 
 Loki: A Unified Multiphysics Simulation Framework for Production. Steve Lesser, Alexey Stomakhin, Gilles Daviet, Joel Wretborn, John Edholm, Noh-hoon Lee, Eston Schweickart, Xiao Zhai, Sean Flynn, and Andrew Moffat. *ACM Transactions on Graphics*, 2022.
 [Link](https://dl.acm.org/doi/abs/10.1145/3528223.3530058) [PDF](http://alexey.stomakhin.com/research/siggraph2022_loki.pdf) [Video](https://www.youtube.com/watch?v=_2TBvSnsLD8&ab_channel=Unity)
