@@ -1,4 +1,12 @@
-I am a researcher at [Unity](https://unity.com/) X [Weta Digital](https://www.wetafx.co.nz/), working on computational solid/fluid mechanics and high-fidelity multi-physics simulation technologies behind the scene of VFX productions like [Avatar: The Way of Water](https://www.avatar.com/movies/avatar-the-way-of-water). Before I joined Weta, I defended my PhD thesis on physics-based fluid simulation and physics-aware fluid animation from [Beihang University](https://ev.buaa.edu.cn/) in December 2019. For more details, find me on [LinkedIn](https://www.linkedin.com/in/zhai-xiao/).
+I am a Senior Researcher at [Weta FX](https://www.wetafx.co.nz/), specializing in computational elastic solid mechanics and high-fidelity multi-physics simulation technologies for VFX productions like [Avatar: The Way of Water](https://www.avatar.com/movies/avatar-the-way-of-water). As a Simulation R&D Tech Lead, I actively work on projects involving the simulation of cloth, hair, muscles, plants, and their interactions with the environment, as well as user input, and I drive the adaptation of our tool, [Loki](https://history.siggraph.org/learning/loki-a-unified-multiphysics-simulation-framework-for-production-by-lesser-stomakhin-daviet-wretborn-edholm-et-al/), into the [production pipeline](https://history.siggraph.org/learning/avatar-the-way-of-cloth-hair-and-coupled-simulation-by-zhai-schweickart-ilinov-wretborn-stomakhin-et-al/). Before joining Weta, I completed my PhD at [Beihang University](https://ev.buaa.edu.cn/) in December 2019, focusing on physics-based fluid simulation and animation. Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/zhai-xiao/).
+
+## Screen Credits
+[The Tomorrow War](https://www.imdb.com/title/tt9777666), 2021
+
+[Avatar: The Way of Water](https://www.imdb.com/title/tt1630029/), 2022
+
+[Better Man](https://www.imdb.com/title/tt14260836/), 2024
+
 
 ## Publication
 
