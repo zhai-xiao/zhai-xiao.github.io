@@ -10,6 +10,9 @@ I am a Senior Researcher at [Weta FX](https://www.wetafx.co.nz/), specializing i
 
 ## Publication
 
+Efficient frictional contacts for soft body dynamics via ADMM. Siyan Zhu, Cheng Fang, Peng Yu, **Xiao Zhai**, Aimin Hao, and Junjun Pan. *The Visual Computer*, 2024.
+[Link](https://link.springer.com/article/10.1007/s00371-024-03438-8)
+
 Avatar: The Way of Hair, Cloth, and Coupled Simulation. **Xiao Zhai**, Eston Schweickart, Nikolay Ilinov, Joel Wretborn, Alexey Stomakhin, John Homer, Jefri Haryono, and Julian Butler. *SIGGRAPH Talks*, 2023.
 [Link](https://dl.acm.org/doi/10.1145/3587421.3595408) [PDF](/assets/publication/%5B2023%5D%5BSIGGRAPH%5DAvatar%20The%20Way%20Of%20Hair%20Cloth%20and%20Coupled%20Simulation.pdf) [Supplement](/assets/publication/%5B2023%5D%5BSIGGRAPH%5D%5BSupplement%5DAvatar%20The%20Way%20Of%20Hair%20Cloth%20and%20Coupled%20Simulation.pdf) [Talk](https://s2023.siggraph.org/presentation/?id=gensub_120&sess=sess178)
 
