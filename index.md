@@ -1,4 +1,19 @@
-I am a Senior Researcher at [Weta FX](https://www.wetafx.co.nz/), specializing in computational elastic solid mechanics and high-fidelity multi-physics simulation technologies for VFX productions like [Avatar: The Way of Water](https://www.avatar.com/movies/avatar-the-way-of-water). As a Simulation R&D Tech Lead, I actively work on projects involving the simulation of cloth, hair, muscles, plants, and their interactions with the environment, as well as user input, and I drive the adaptation of our tool, [Loki](https://history.siggraph.org/learning/loki-a-unified-multiphysics-simulation-framework-for-production-by-lesser-stomakhin-daviet-wretborn-edholm-et-al/), into the [production pipeline](https://history.siggraph.org/learning/avatar-the-way-of-cloth-hair-and-coupled-simulation-by-zhai-schweickart-ilinov-wretborn-stomakhin-et-al/). Before joining Weta, I completed my PhD at [Beihang University](https://ev.buaa.edu.cn/) in December 2019, focusing on physics-based fluid simulation and animation. Feel free to contact me through [LinkedIn](https://www.linkedin.com/in/zhai-xiao/).
+Senior Researcher and Engineer at [Weta FX](https://www.wetafx.co.nz/), bringing digital worlds to life through cutting-edge physics simulation.
+
+As a Simulation R&D Tech Lead, I engineer high-fidelity technologies for simulating lifelike cloth, hair, muscles, and plants, and their complex interactions with virtual environments and artist input. I spearheaded the successful integration of our flagship multiphysics framework, [Loki](https://history.siggraph.org/learning/loki-a-unified-multiphysics-simulation-framework-for-production-by-lesser-stomakhin-daviet-wretborn-edholm-et-al/), into Weta's core [production pipeline](https://history.siggraph.org/learning/avatar-the-way-of-cloth-hair-and-coupled-simulation-by-zhai-schweickart-ilinov-wretborn-stomakhin-et-al/), enhancing our creative capabilities and efficiency.
+
+My work is featured in many major VFX productions, including:
+* [Avatar: The Way of Water](https://www.avatar.com/movies/avatar-the-way-of-water)
+* [Avatar: Fire and Ash](https://www.avatar.com/movies/avatar-fire-and-ash)
+* [Better Man](https://www.imdb.com/title/tt14260836/)
+* [Kingdom of the Planet of the Apes](https://www.imdb.com/title/tt11389872/)
+* [Guardians of the Galaxy Vol. 3](https://www.imdb.com/title/tt6791350/)
+* [A Minecraft Movie](https://www.imdb.com/title/tt3566834/)
+* [The Last of Us](https://www.imdb.com/title/tt3581920/)
+* [House of the Dragon S2](https://www.imdb.com/title/tt11198330/)
+* And many more...
+
+I hold a PhD in physics-based simulation from [Beihang University](https://ev.buaa.edu.cn/). Let's connect on [LinkedIn](https://www.linkedin.com/in/zhai-xiao/).
 
 ## Screen Credits
 [Better Man](https://www.imdb.com/title/tt14260836/), 2024
