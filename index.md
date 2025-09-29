@@ -10,6 +10,9 @@ I am a Senior Researcher at [Weta FX](https://www.wetafx.co.nz/), specializing i
 
 ## Publication
 
+Stabilizing Impossible Collisions with Loki. **Xiao Zhai**, Eston Schweickart, Jefri Haryono, Nikolay Ilinov, and Andrea Merlo. *SIGGRAPH Talks*, 2025.\
+[Link](https://dl.acm.org/doi/10.1145/3721239.3734080) [PDF](/assets/publication/2025_stabilizing_collisions.pdf) [Supplement](/assets/publication/2025_stabilizing_collisions_supp.pdf) [Video](https://dl.acm.org/doi/suppl/10.1145/3721239.3734080/suppl_file/v2_compressed.mp4)
+
 Efficient frictional contacts for soft body dynamics via ADMM. Siyan Zhu, Cheng Fang, Peng Yu, **Xiao Zhai**, Aimin Hao, and Junjun Pan. *The Visual Computer*, 2024.\
 [Link](https://link.springer.com/article/10.1007/s00371-024-03438-8) [PDF](/assets/publication/%5B2024%5D%5BTVC%5DEfficient%20frictional%20contacts%20for%20soft%20body%20dynamics%20via%20ADMM.pdf)
 
