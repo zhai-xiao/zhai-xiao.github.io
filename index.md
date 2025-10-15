@@ -9,6 +9,7 @@ My work is featured in many major VFX productions, including:
 * [Kingdom of the Planet of the Apes](https://www.imdb.com/title/tt11389872/)
 * [Guardians of the Galaxy Vol. 3](https://www.imdb.com/title/tt6791350/)
 * [A Minecraft Movie](https://www.imdb.com/title/tt3566834/)
+* [Predator: Badlands](https://www.imdb.com/title/tt31227572/)
 * [The Last of Us](https://www.imdb.com/title/tt3581920/)
 * [House of the Dragon S2](https://www.imdb.com/title/tt11198330/)
 * And many more...
@@ -16,6 +17,8 @@ My work is featured in many major VFX productions, including:
 I hold a PhD in physics-based simulation from [Beihang University](https://ev.buaa.edu.cn/). Let's connect on [LinkedIn](https://www.linkedin.com/in/zhai-xiao/).
 
 ## Screen Credits
+[Predator: Badlands](https://www.imdb.com/title/tt31227572/), 2025
+
 [Better Man](https://www.imdb.com/title/tt14260836/), 2024
 
 [Avatar: The Way of Water](https://www.imdb.com/title/tt1630029/), 2022
