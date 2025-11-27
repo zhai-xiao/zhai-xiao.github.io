@@ -35,7 +35,7 @@ Parallel Constraint Graph Partitioning and Coloring for Realtime Soft-Body Cutti
 Stabilizing Impossible Collisions with Loki. **Xiao Zhai\***, Eston Schweickart, Jefri Haryono, Nikolay Ilinov, and Andrea Merlo. *SIGGRAPH Talks*, 2025.\
 [Link](https://dl.acm.org/doi/10.1145/3721239.3734080) [PDF](/assets/publication/2025_stabilizing_collisions.pdf) [Supplement](/assets/publication/2025_stabilizing_collisions_supp.pdf) [Video](https://dl.acm.org/doi/suppl/10.1145/3721239.3734080/suppl_file/v2_compressed.mp4)
 
-Efficient frictional contacts for soft body dynamics via ADMM. Siyan Zhu, Cheng Fang, Peng Yu\*, **Xiao Zhai\***, Aimin Hao, and Junjun Pan. *The Visual Computer*, 2024.\
+Efficient frictional contacts for soft body dynamics via ADMM. Siyan Zhu, Cheng Fang, Peng Yu\*, **Xiao Zhai\***, Aimin Hao, and Junjun Pan\*. *The Visual Computer*, 2024.\
 [Link](https://link.springer.com/article/10.1007/s00371-024-03438-8) [PDF](/assets/publication/%5B2024%5D%5BTVC%5DEfficient%20frictional%20contacts%20for%20soft%20body%20dynamics%20via%20ADMM.pdf)
 
 Avatar: The Way of Hair, Cloth, and Coupled Simulation. **Xiao Zhai\***, Eston Schweickart, Nikolay Ilinov, Joel Wretborn, Alexey Stomakhin, John Homer, Jefri Haryono, and Julian Butler. *SIGGRAPH Talks*, 2023.\
@@ -47,10 +47,10 @@ Loki: A Unified Multiphysics Simulation Framework for Production. Steve Lesser\*
 Simulating Cloth Using Bilinear Elements. Eston Schweickart\* and **Xiao Zhai**. *SIGGRAPH Talks*, 2021.\
 [Link](https://dl.acm.org/doi/10.1145/3450623.3464675) [PDF](/assets/publication/%5B2021%5D%5BSIGGRAPH%5DSimulating%20Cloth%20Using%20Bilinear%20Elements.pdf) [Supplement](/assets/publication/%5B2021%5D%5BSIGGRAPH%5D%5BSupplement%5DSimulating%20Cloth%20Using%20Bilinear%20Elements.pdf) [Talk](https://s2021.siggraph.org/presentation/?id=gensub_343&sess=sess191)
 
-Vectorized Painting with Temporal Diffusion Curves. Yingjia Li†, **Xiao Zhai†**, Fei Hou\*, Yawen Liu, Aimin Hao, and Hong Qin\*. *IEEE Transactions on Visualization and Computer Graphics*, 2019.\
+Vectorized Painting with Temporal Diffusion Curves. Yingjia Li †, **Xiao Zhai †**, Fei Hou\*, Yawen Liu, Aimin Hao, and Hong Qin\*. *IEEE Transactions on Visualization and Computer Graphics*, 2019.\
 [Link](https://ieeexplore.ieee.org/document/8765801) [PDF](/assets/publication/%5B2019%5D%5BTVCG%5DVectorized%20Painting%20with%20Temporal%20Diffusion%20Curves.pdf) [Video](https://youtu.be/pQvwzhqtNq8)
 
-Multi-Task Learning on Monocular Water Images: Surface Reconstruction and Image Synthesis. Xueguang Xie†, **Xiao Zhai†**, Fei Hou\*, Aimin Hao, and Hong Qin\*. *Computer Animation and Virtual Worlds*, 2019.\
+Multi-Task Learning on Monocular Water Images: Surface Reconstruction and Image Synthesis. Xueguang Xie †, **Xiao Zhai †**, Fei Hou\*, Aimin Hao, and Hong Qin\*. *Computer Animation and Virtual Worlds*, 2019.\
 [Link](https://onlinelibrary.wiley.com/doi/10.1002/cav.1896) [PDF](/assets/publication/%5B2019%5D%5BCAVW%5DMultitask%20learning%20on%20monocular%20water%20images%20Surface%20reconstruction%20and%20image%20synthesis.pdf) [Video](https://youtu.be/fwHSEZtKHBY) [Code](https://github.com/zhai-xiao/Water-Surface-Reconstruction-and-Image-Synthesis)
 
 Fluid Simulation with Adaptive Staggered Power Particles on GPUs. **Xiao Zhai**, Fei Hou\*, Hong Qin\*, and Aimin Hao. *IEEE Transactions on Visualization and Computer Graphics*, 2018.\
