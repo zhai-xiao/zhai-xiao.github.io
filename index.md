@@ -17,6 +17,8 @@ My work is featured in many major VFX productions, including:
 I hold a PhD in physics-based simulation from [Beihang University](https://ev.buaa.edu.cn/). Let's connect on [LinkedIn](https://www.linkedin.com/in/zhai-xiao/).
 
 ## Screen Credits
+[Avatar: Fire and Ash](https://www.avatar.com/movies/avatar-fire-and-ash), 2025
+
 [Predator: Badlands](https://www.imdb.com/title/tt31227572/), 2025
 
 [Better Man](https://www.imdb.com/title/tt14260836/), 2024
@@ -27,6 +29,8 @@ I hold a PhD in physics-based simulation from [Beihang University](https://ev.bu
 
 
 ## Publication
+Parallel Constraint Graph Partitioning and Coloring for Realtime Soft-Body Cutting. Peng Yu, Ruiqi Wang, Chunlei Li, Yuxuan Li, **Xiao Zhai**, Yuanbo He, Hongyu Wu, Aimin Hao, and Yang Gao. *Pacific Graphics Conference Papers*, 2025.\
+[Link](https://diglib.eg.org/items/8d122d91-a90e-4007-80a5-fd42c5e5023c) [PDF](/assets/publication/2025_graph_coloring.pdf)
 
 Stabilizing Impossible Collisions with Loki. **Xiao Zhai**, Eston Schweickart, Jefri Haryono, Nikolay Ilinov, and Andrea Merlo. *SIGGRAPH Talks*, 2025.\
 [Link](https://dl.acm.org/doi/10.1145/3721239.3734080) [PDF](/assets/publication/2025_stabilizing_collisions.pdf) [Supplement](/assets/publication/2025_stabilizing_collisions_supp.pdf) [Video](https://dl.acm.org/doi/suppl/10.1145/3721239.3734080/suppl_file/v2_compressed.mp4)
