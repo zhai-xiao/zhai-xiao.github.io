@@ -1,0 +1,170 @@
+// Movie poster grid system
+.movie-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  padding: var(--spacing-lg) 0;
+  
+  // Responsive grid adjustments
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+    padding: var(--spacing-md) 0;
+  }
+  
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-sm);
+  }
+}
+
+.movie-poster {
+  position: relative;
+  background: var(--dark-gray);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+  cursor: pointer;
+  
+  // Cinematic poster aspect ratio (2:3)
+  aspect-ratio: 2/3;
+  
+  &:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-xl);
+  }
+  
+  // Poster image
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+  }
+  
+  // Hover overlay effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      transparent 50%,
+      rgba(0, 0, 0, 0.7) 100%
+    );
+    opacity: 0;
+    transition: opacity var(--transition-medium);
+    z-index: 1;
+  }
+  
+  &:hover::before {
+    opacity: 1;
+  }
+  
+  &:hover img {
+    transform: scale(1.1);
+  }
+  
+  // Movie title overlay
+  .movie-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: var(--spacing-md);
+    z-index: 2;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity var(--transition-medium), transform var(--transition-medium);
+    
+    .movie-title {
+      @include heading-serif;
+      font-size: 1.1rem;
+      color: var(--text-primary);
+      margin: 0;
+      line-height: 1.3;
+    }
+    
+    .movie-year {
+      @include body-sans;
+      font-size: 0.9rem;
+      color: var(--gold-primary);
+      margin: 0;
+    }
+  }
+  
+  &:hover .movie-info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Section headers
+.section-header {
+  text-align: center;
+  margin: var(--spacing-xxl) 0 var(--spacing-xl) 0;
+  
+  .section-title {
+    @include heading-serif-heavy;
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    margin-bottom: var(--spacing-sm);
+    
+    &::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: var(--gradient-accent);
+      margin: var(--spacing-md) auto 0;
+      border-radius: var(--radius-sm);
+    }
+  }
+  
+  .section-subtitle {
+    @include body-sans-light;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+// Responsive layout utilities
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  
+  @media (max-width: 768px) {
+    padding: 0 var(--spacing-sm);
+  }
+}
+
+.grid-container {
+  display: grid;
+  gap: var(--spacing-lg);
+  
+  &.two-column {
+    grid-template-columns: repeat(2, 1fr);
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  &.three-column {
+    grid-template-columns: repeat(3, 1fr);
+    
+    @media (max-width: 968px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    @media (max-width: 568px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}

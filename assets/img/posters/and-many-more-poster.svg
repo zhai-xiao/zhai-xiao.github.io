@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <rect width="400" height="600" fill="#1a1a1a"/>
+  <text x="200" y="280" font-family="Playfair Display, serif" font-size="24" font-weight="bold" fill="#d4af37" text-anchor="middle">And many more...</text>
+  <rect x="170" y="320" width="60" height="2" fill="#d4af37"/>
+  <circle cx="200" cy="380" r="25" fill="none" stroke="#d4af37" stroke-width="1.5"/>
+  <circle cx="200" cy="380" r="18" fill="none" stroke="#d4af37" stroke-width="0.8" opacity="0.6"/>
+</svg>

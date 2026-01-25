@@ -3,4 +3,25 @@ logo: /assets/img/logo.jpeg
 description: Simulation Researcher at Weta Digital
 show_downloads: false
 google_analytics:
-theme: jekyll-theme-minimal
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+collections:
+  movies:
+    output: true
+    permalink: /:collection/:name/
+
+minimal_mistakes_skin: "dark"
+search: true
+analytics:
+  provider: "google-universal"
+  property: ""

@@ -1,0 +1,55 @@
+// Cinematic Elegance Color Palette
+:root {
+  // Dark theme base colors
+  --charcoal: #1a1a1a;
+  --dark-gray: #2d2d2d;
+  --medium-gray: #404040;
+  --light-gray: #666666;
+  
+  // Cinematic accent colors
+  --gold-primary: #d4af37;
+  --gold-secondary: #f4e5c2;
+  --gold-accent: #b8941f;
+  
+  // Deep burgundy accents
+  --burgundy-primary: #722f37;
+  --burgundy-secondary: #8b3a46;
+  
+  // Modern teal touches
+  --teal-primary: #2a6477;
+  --teal-secondary: #3a7f8f;
+  
+  // Typography colors
+  --text-primary: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #999999;
+  
+  // Background gradients
+  --gradient-primary: linear-gradient(135deg, var(--charcoal) 0%, var(--dark-gray) 100%);
+  --gradient-accent: linear-gradient(135deg, var(--burgundy-primary) 0%, var(--teal-primary) 100%);
+  
+  // Spacing system
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-xxl: 4rem;
+  
+  // Border radius
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  
+  // Shadow system
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 32px rgba(0, 0, 0, 0.6);
+  
+  // Transitions
+  --transition-fast: 0.2s ease;
+  --transition-medium: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
