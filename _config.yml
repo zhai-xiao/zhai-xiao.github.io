@@ -1,33 +1,27 @@
 title: Xiao Zhai
-description: Simulation Researcher at Weta Digital
 logo: /assets/img/logo.jpeg
+description: Simulation Researcher at Weta Digital
+show_downloads: false
+google_analytics:
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
-# Build settings
 markdown: kramdown
 highlighter: rouge
 kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# Plugins (GitHub Pages compatible)
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-
-# Theme
-theme: minima
-
-# Collections
 collections:
   movies:
     output: true
     permalink: /:collection/:name/
 
-# SEO
 minimal_mistakes_skin: "dark"
 search: true
-
-# Google Analytics (optional)
 analytics:
   provider: "google-universal"
+  property: ""
