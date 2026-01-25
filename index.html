@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xiao Zhai @ Weta FX</title>
+  <meta name="description" content="Senior Research Engineer at Weta FX, bringing digital worlds to life through cutting-edge physics simulation">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta property="og:title" content="Xiao Zhai @ Weta FX">
+  <meta property="og:description" content="Senior Research Engineer at Weta FX, bringing digital worlds to life through cutting-edge physics simulation">
+  <meta property="og:image" content="/assets/img/logo.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+<style>
+/* Compact cinematic design */
+body {
+  background: 
+    /* Light leakage effects */
+    radial-gradient(ellipse at 15% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 30%),
+    radial-gradient(ellipse at 85% 80%, rgba(58, 127, 143, 0.06) 0%, transparent 25%),
+    radial-gradient(ellipse at 50% 10%, rgba(255, 255, 255, 0.03) 0%, transparent 20%),
+    linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  padding: 15px;
+  font-size: 14px;
+  text-align: center;
+  
+  /* Film grain texture effect */
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    /* Light leakage effects */
+    radial-gradient(ellipse at 15% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 30%),
+    radial-gradient(ellipse at 85% 80%, rgba(58, 127, 143, 0.06) 0%, transparent 25%),
+    radial-gradient(ellipse at 50% 10%, rgba(255, 255, 255, 0.03) 0%, transparent 20%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+@media (max-width: 768px) {
+  body { padding: 10px; font-size: 13px; }
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px 0;
+  margin-bottom: 25px;
+}
+
+.hero h1, .hero p {
+  text-align: center;
+}
+
+.hero img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #d4af37;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 900;
+  margin: 0 0 15px 0;
+  background: linear-gradient(135deg, #d4af37, #f4e5c2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero p {
+  color: #cccccc;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.hero a {
+  color: #3a7f8f;
+}
+
+.section {
+  margin: 30px 0;
+  padding: 20px;
+  background: rgba(45, 45, 45, 0.6);
+  border-radius: 12px;
+  backdrop-filter: blur(10px) brightness(1.1);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.section h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #d4af37;
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 10px;
+  margin: 15px 0;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .movies {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+  }
+}
+
+.movie {
+  position: relative;
+  background: #2d2d2d;
+  border-radius: 8px;
+  overflow: hidden;
+  aspect-ratio: 2/3;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.movie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.9));
+  color: #ffffff;
+  padding: 15px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.movie:hover .movie-info {
+  opacity: 1;
+}
+
+.movie-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.movie-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.movie-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+}
+
+.movie-year {
+  font-size: 0.8rem;
+  color: #d4af37;
+  margin: 0;
+}
+
+.movie-list {
+  margin: 25px 0;
+}
+
+.movie-list li {
+  margin: 12px 0;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.movie-list a {
+  color: #cccccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.movie-list a:hover {
+  color: #d4af37;
+}
+
+.pub {
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(26, 26, 26, 0.6);
+  border-radius: 8px;
+  border-left: 3px solid #d4af37;
+}
+
+.pub-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1rem;
+  color: #f4e5c2;
+  margin: 0 0 8px 0;
+  font-weight: 700;
+}
+
+.pub-authors {
+  color: #cccccc;
+  font-size: 0.85rem;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+}
+
+.pub-venue {
+  color: #999999;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin: 0 0 10px 0;
+}
+
+.pub-links {
+  margin: 8px 0;
+}
+
+.pub-links a {
+  color: #3a7f8f;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 0.8rem;
+  transition: color 0.2s ease;
+}
+
+.pub-links a:hover {
+  color: #d4af37;
+}
+
+.contact {
+  text-align: center;
+  margin: 40px 0;
+  padding: 20px;
+  color: #999999;
+  font-size: 0.9rem;
+}
+
+.contact a {
+  color: #3a7f8f;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  color: #d4af37;
+}
+
+.fade {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+<div class="container">
+  <section class="hero fade">
+    <img src="/assets/img/logo.jpeg" alt="Xiao Zhai">
+    <h1 style="margin-bottom: 0">Xiao Zhai</h1>
+    <h1 style="text-align: center; font-size: 1rem;">
+      PhD, Simulation Research Engineer @ <a href="https://www.wetafx.co.nz/">Weta FX</a>
+    </h1>
+    <p>
+      I develop simulation technologies behind the invisible VFX, specializing in computational elastic solid mechanics and high-fidelity multi-physics simulation technologies for major film productions like <a href="https://www.avatar.com/movies/avatar-the-way-of-water">Avatar: The Way of Water</a>. As a Simulation R&D Tech Lead, I help create the physics tools that make virtual environments interact naturally with artist creations.
+    </p>
+    <p>
+      One of my key contributions was helping design, develop and maintain our multiphysics framework <a href="https://history.siggraph.org/learning/loki-a-unified-multiphysics-simulation-framework-for-production-by-lesser-stomakhin-daviet-wretborn-edholm-et-al/">Loki</a>, and integrate
+      it into Weta's <a href="https://history.siggraph.org/learning/avatar-the-way-of-cloth-hair-and-coupled-simulation-by-zhai-schweickart-ilinov-wretborn-stomakhin-et-al/">production pipeline</a>. This unified system allows different simulation elements to work together, greatly expanding the creative possibilities for filmmakers.
+    </p>
+    <p>
+      I hold a PhD in physics-based simulation from <a href="https://ev.buaa.edu.cn/">Beihang University</a>. Feel free to connect on <a href="https://www.linkedin.com/in/zhai-xiao/">LinkedIn</a>.
+    </p>
+  </section>
+
+  <section class="section fade">
+    <h2>VFX Productions featuring my work</h2>
+    <div class="movies">
+      <a href="https://www.avatar.com/movies/avatar-fire-and-ash" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/avatar-fire-and-ash-poster.jpg" alt="Avatar: Fire and Ash">
+          <div class="movie-info">
+            <div class="movie-title">Avatar: Fire and Ash</div>
+            <div class="movie-year">2025</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.avatar.com/movies/avatar-the-way-of-water" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/avatar-the-way-of-water-poster.jpg" alt="Avatar: The Way of Water">
+          <div class="movie-info">
+            <div class="movie-title">Avatar: The Way of Water</div>
+            <div class="movie-year">2022</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.imdb.com/title/tt14260836/" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/better-man-poster.jpg" alt="Better Man">
+          <div class="movie-info">
+            <div class="movie-title">Better Man</div>
+            <div class="movie-year">2024</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.imdb.com/title/tt11389872/" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/kingdom-of-planet-of-apes-poster.jpg" alt="Kingdom of the Planet of the Apes">
+          <div class="movie-info">
+            <div class="movie-title">Kingdom of the Planet of the Apes</div>
+            <div class="movie-year">2024</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.imdb.com/title/tt6791350/" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/guardians-galaxy-vol3-poster.jpg" alt="Guardians of the Galaxy Vol. 3">
+          <div class="movie-info">
+            <div class="movie-title">Guardians of the Galaxy Vol. 3</div>
+            <div class="movie-year">2023</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.imdb.com/title/tt3566834/" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/minecraft-movie-poster.jpg" alt="A Minecraft Movie">
+          <div class="movie-info">
+            <div class="movie-title">A Minecraft Movie</div>
+            <div class="movie-year">2025</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.imdb.com/title/tt31227572/" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/predator-badlands-poster.jpg" alt="Predator: Badlands">
+          <div class="movie-info">
+            <div class="movie-title">Predator: Badlands</div>
+            <div class="movie-year">2025</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.imdb.com/title/tt3581920/" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/last-of-us-poster.webp" alt="The Last of Us">
+          <div class="movie-info">
+            <div class="movie-title">The Last of Us TV Series</div>
+            <div class="movie-year">2023</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.imdb.com/title/tt11198330/" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/house-dragon-s2-poster.jpg" alt="House of the Dragon S2">
+          <div class="movie-info">
+            <div class="movie-title">House of the Dragon Season 2</div>
+            <div class="movie-year">2025</div>
+          </div>
+        </div>
+      </a>
+      <a class="movie-link">
+        <div class="movie">
+        <img src="/assets/img/posters/and-many-more-poster.svg" alt="And many more...">
+        <div class="movie-info">
+          <div class="movie-title">And many more...</div>
+        </div>
+      </div>
+      </div>
+      </a>
+  </section>
+
+  <section class="section fade">
+    <h2>Screen Credits</h2>
+    <div class="movies">
+      <a href="https://www.avatar.com/movies/avatar-fire-and-ash" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/avatar-fire-and-ash-poster.jpg" alt="Avatar: Fire and Ash">
+          <div class="movie-info">
+            <div class="movie-title">Avatar: Fire and Ash</div>
+            <div class="movie-year">2025</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.imdb.com/title/tt31227572/" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/predator-badlands-poster.jpg" alt="Predator: Badlands">
+          <div class="movie-info">
+            <div class="movie-title">Predator: Badlands</div>
+            <div class="movie-year">2025</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.imdb.com/title/tt14260836/" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/better-man-poster.jpg" alt="Better Man">
+          <div class="movie-info">
+            <div class="movie-title">Better Man</div>
+            <div class="movie-year">2024</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.avatar.com/movies/avatar-the-way-of-water" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/avatar-the-way-of-water-poster.jpg" alt="Avatar: The Way of Water">
+          <div class="movie-info">
+            <div class="movie-title">Avatar: The Way of Water</div>
+            <div class="movie-year">2022</div>
+          </div>
+        </div>
+      </a>
+      <a href="https://www.imdb.com/title/tt9777666/" target="_blank" rel="noopener noreferrer" class="movie-link">
+        <div class="movie">
+          <img src="/assets/img/posters/tomorrow-war-poster.jpg" alt="The Tomorrow War">
+          <div class="movie-info">
+            <div class="movie-title">The Tomorrow War</div>
+            <div class="movie-year">2021</div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="section fade">
+    <h2>Publication</h2>
+    
+    <div class="pub">
+      <div class="pub-title">Parallel Constraint Graph Partitioning and Coloring for Realtime Soft-Body Cutting</div>
+      <div class="pub-authors">Peng Yu, Ruiqi Wang, Chunlei Li, Yuxuan Li, <strong>Xiao Zhai</strong>, Yuanbo He, Hongyu Wu, Aimin Hao, and Yang Gao*</div>
+      <div class="pub-venue">Pacific Graphics Conference Papers, 2025</div>
+      <div class="pub-links">
+        <a href="https://diglib.eg.org/items/8d122d91-a90e-4007-80a5-fd42c5e5023c">Link</a>
+        <a href="/assets/publication/2025_graph_coloring.pdf">PDF</a>
+      </div>
+    </div>
+    
+    <div class="pub">
+      <div class="pub-title">Stabilizing Impossible Collisions with Loki</div>
+      <div class="pub-authors"><strong>Xiao Zhai*</strong>, Eston Schweickart, Jefri Haryono, Nikolay Ilinov, and Andrea Merlo</div>
+      <div class="pub-venue">SIGGRAPH Talks, 2025</div>
+      <div class="pub-links">
+        <a href="https://dl.acm.org/doi/10.1145/3721239.3734080">Link</a>
+        <a href="/assets/publication/2025_stabilizing_collisions.pdf">PDF</a>
+        <a href="/assets/publication/2025_stabilizing_collisions_supp.pdf">Supplement</a>
+        <a href="https://dl.acm.org/doi/suppl/10.1145/3721239.3734080/suppl_file/v2_compressed.mp4">Video</a>
+      </div>
+    </div>
+    
+    <div class="pub">
+      <div class="pub-title">Efficient frictional contacts for soft body dynamics via ADMM</div>
+      <div class="pub-authors">Siyan Zhu, Cheng Fang, Peng Yu*, <strong>Xiao Zhai*</strong>, Aimin Hao, and Junjun Pan*</div>
+      <div class="pub-venue">The Visual Computer, 2024</div>
+      <div class="pub-links">
+        <a href="https://link.springer.com/article/10.1007/s00371-024-03438-8">Link</a>
+        <a href="/assets/publication/%5B2024%5D%5BTVC%5DEfficient%20frictional%20contacts%20for%20soft%20body%20dynamics%20via%20ADMM.pdf">PDF</a>
+      </div>
+    </div>
+    
+    <div class="pub">
+      <div class="pub-title">Avatar: The Way of Hair, Cloth, and Coupled Simulation</div>
+      <div class="pub-authors"><strong>Xiao Zhai*</strong>, Eston Schweickart, Nikolay Ilinov, Joel Wretborn, Alexey Stomakhin, John Homer, Jefri Haryono, and Julian Butler</div>
+      <div class="pub-venue">SIGGRAPH Talks, 2023</div>
+      <div class="pub-links">
+        <a href="https://dl.acm.org/doi/10.1145/3587421.3595408">Link</a>
+        <a href="/assets/publication/%5B2023%5D%5BSIGGRAPH%5DAvatar%20The%20Way%20Of%20Hair%20Cloth%20and%20Coupled%20Simulation.pdf">PDF</a>
+        <a href="/assets/publication/%5B2023%5D%5BSIGGRAPH%5D%5BSupplement%5DAvatar%20The%20Way%20Of%20Hair%20Cloth%20and%20Coupled%20Simulation.pdf">Supplement</a>
+        <a href="https://s2023.siggraph.org/presentation/?id=gensub_120&sess=sess178">Talk</a>
+      </div>
+    </div>
+    
+    <div class="pub">
+      <div class="pub-title">Loki: A Unified Multiphysics Simulation Framework for Production</div>
+      <div class="pub-authors">Steve Lesser*, Alexey Stomakhin, Gilles Daviet, Joel Wretborn, John Edholm, Noh-hoon Lee, Eston Schweickart, <strong>Xiao Zhai</strong>, Sean Flynn, and Andrew Moffat</div>
+      <div class="pub-venue">ACM Transactions on Graphics, 2022</div>
+      <div class="pub-links">
+        <a href="https://dl.acm.org/doi/abs/10.1145/3528223.3530058">Link</a>
+        <a href="http://alexey.stomakhin.com/research/siggraph2022_loki.pdf">PDF</a>
+        <a href="https://www.youtube.com/watch?v=_2TBvSnsLD8&ab_channel=Unity">Video</a>
+      </div>
+    </div>
+    
+    <div class="pub">
+      <div class="pub-title">Simulating Cloth Using Bilinear Elements</div>
+      <div class="pub-authors">Eston Schweickart* and <strong>Xiao Zhai</strong></div>
+      <div class="pub-venue">SIGGRAPH Talks, 2021</div>
+      <div class="pub-links">
+        <a href="https://dl.acm.org/doi/10.1145/3450623.3464675">Link</a>
+        <a href="/assets/publication/%5B2021%5D%5BSIGGRAPH%5DSimulating%20Cloth%20Using%20Bilinear%20Elements.pdf">PDF</a>
+        <a href="/assets/publication/%5B2021%5D%5BSIGGRAPH%5D%5BSupplement%5DSimulating%20Cloth%20Using%20Bilinear%20Elements.pdf">Supplement</a>
+        <a href="https://s2021.siggraph.org/presentation/?id=gensub_343&sess=sess191">Talk</a>
+      </div>
+    </div>
+    
+    <div class="pub">
+      <div class="pub-title">Vectorized Painting with Temporal Diffusion Curves</div>
+      <div class="pub-authors">Yingjia Li †, <strong>Xiao Zhai †</strong>, Fei Hou*, Yawen Liu, Aimin Hao, and Hong Qin*</div>
+      <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics, 2019</div>
+      <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/document/8765801">Link</a>
+        <a href="/assets/publication/%5B2019%5D%5BTVCG%5DVectorized%20Painting%20with%20Temporal%20Diffusion%20Curves.pdf">PDF</a>
+        <a href="https://youtu.be/pQvwzhqtNq8">Video</a>
+      </div>
+    </div>
+    
+    <div class="pub">
+      <div class="pub-title">Multi-Task Learning on Monocular Water Images: Surface Reconstruction and Image Synthesis</div>
+      <div class="pub-authors">Xueguang Xie †, <strong>Xiao Zhai †</strong>, Fei Hou*, Aimin Hao, and Hong Qin*</div>
+      <div class="pub-venue">Computer Animation and Virtual Worlds, 2019</div>
+      <div class="pub-links">
+        <a href="https://onlinelibrary.wiley.com/doi/10.1002/cav.1896">Link</a>
+        <a href="/assets/publication/%5B2019%5D%5BCAVW%5DMultitask%20learning%20on%20monocular%20water%20images%20Surface%20reconstruction%20and%20image%20synthesis.pdf">PDF</a>
+        <a href="https://youtu.be/fwHSEZtKHBY">Video</a>
+        <a href="https://github.com/zhai-xiao/Water-Surface-Reconstruction-and-Image-Synthesis">Code</a>
+      </div>
+    </div>
+    
+    <div class="pub">
+      <div class="pub-title">Fluid Simulation with Adaptive Staggered Power Particles on GPUs</div>
+      <div class="pub-authors"><strong>Xiao Zhai</strong>, Fei Hou*, Hong Qin*, and Aimin Hao</div>
+      <div class="pub-venue">IEEE Transactions on Visualization and Computer Graphics, 2018</div>
+      <div class="pub-links">
+        <a href="https://ieeexplore.ieee.org/document/8573859">Link</a>
+        <a href="/assets/publication/%5B2018%5D%5BTVCG%5DFluid%20Simulation%20with%20Adaptive%20Staggered%20Power%20Particles%20on%20GPUs.pdf">PDF</a>
+        <a href="https://youtu.be/RseHJhQamTQ">Video</a>
+      </div>
+    </div>
+    
+    <div class="pub">
+      <div class="pub-title">Inverse Modelling of Incompressible Gas Flow in Subspace</div>
+      <div class="pub-authors"><strong>Xiao Zhai</strong>, Fei Hou*, Hong Qin, and Aimin Hao</div>
+      <div class="pub-venue">Computer Graphics Forum, 2017</div>
+      <div class="pub-links">
+        <a href="http://onlinelibrary.wiley.com/wol1/doi/10.1111/cgf.12861/abstract">Link</a>
+        <a href="/assets/publication/%5B2016%5D%5BCGF%5DInverse%20Modelling%20of%20Incompressible%20Gas%20Flow%20in%20Subspace.pdf">PDF</a>
+        <a href="https://youtu.be/nzJuTha9xy8">Video</a>
+      </div>
+    </div>
+    
+    <p style="text-align: center; margin: 30px 0; color: #999999; font-size: 0.85rem;">
+      † Joint first authors.  * Corresponding authors.
+    </p>
+  </section>
+
+  <footer class="contact fade">
+    <p style="margin-top: 10px;">© 2025 Xiao Zhai, PhD.</p>
+  </footer>
+</div>
