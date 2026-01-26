@@ -1,0 +1,542 @@
+/* ========================================
+   Xiao Zhai - Personal Homepage
+   Redesigned with refined aesthetics
+   ======================================== */
+
+/* CSS Custom Properties */
+:root {
+  /* Colors - Refined Gold Palette */
+  --color-gold: #d4af37;
+  --color-gold-light: #f4e5c2;
+  --color-gold-dark: #c4a030;
+  --color-gold-subtle: rgba(212, 175, 55, 0.2);
+  
+  /* Teal Accent */
+  --color-teal: #3a7f8f;
+  --color-teal-light: #4a9cae;
+  
+  /* Background Colors */
+  --color-bg-dark: #1a1a1a;
+  --color-bg-medium: #2d2d2d;
+  --color-bg-light: #3a3a3a;
+  --color-bg-card: rgba(45, 45, 45, 0.6);
+  --color-bg-pub: rgba(26, 26, 26, 0.6);
+  
+  /* Text Colors */
+  --color-text-white: #ffffff;
+  --color-text-light: #e0e0e0;
+  --color-text-muted: #cccccc;
+  --color-text-subtle: #999999;
+  
+  /* Typography */
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Borders */
+  --border-color: var(--color-gold-subtle);
+  --border-radius: 12px;
+  --border-radius-sm: 8px;
+}
+
+/* ========================================
+   Base Styles
+   ======================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--color-text-light);
+  text-align: center;
+  background: 
+    /* Subtle light leakage effects - refined */
+    radial-gradient(ellipse at 15% 20%, rgba(212, 175, 55, 0.06) 0%, transparent 25%),
+    radial-gradient(ellipse at 85% 80%, rgba(58, 127, 143, 0.04) 0%, transparent 20%),
+    radial-gradient(ellipse at 50% 5%, rgba(255, 255, 255, 0.02) 0%, transparent 15%),
+    linear-gradient(135deg, var(--color-bg-dark) 0%, var(--color-bg-medium) 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Film grain texture overlay */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(ellipse at 15% 20%, rgba(212, 175, 55, 0.06) 0%, transparent 25%),
+    radial-gradient(ellipse at 85% 80%, rgba(58, 127, 143, 0.04) 0%, transparent 20%),
+    radial-gradient(ellipse at 50% 5%, rgba(255, 255, 255, 0.02) 0%, transparent 15%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ========================================
+   Typography
+   ======================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  margin-top: 0;
+  margin-bottom: var(--spacing-sm);
+  font-weight: 700;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--spacing-md);
+  line-height: 1.7;
+}
+
+p.centered {
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: center;
+}
+
+a {
+  color: var(--color-teal);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-gold);
+}
+
+/* ========================================
+   Layout
+   ======================================== */
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* ========================================
+   Hero Section
+   ======================================== */
+
+.hero {
+  text-align: center;
+  padding: var(--spacing-xl) 0;
+  margin-bottom: var(--spacing-xl);
+}
+
+.hero img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 3px solid var(--color-gold);
+  margin-bottom: var(--spacing-lg);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin: 0 0 var(--spacing-none) 0;
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-light) 50%, var(--color-gold-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.02em;
+}
+
+.hero .subtitle {
+  font-size: 1rem;
+  text-align: center;
+  color: var(--color-text-muted);
+  font-weight: 400;
+}
+
+.hero .subtitle a {
+  color: var(--color-teal);
+  font-weight: 500;
+}
+
+.hero .subtitle a:hover {
+  color: var(--color-gold);
+}
+
+.hero p {
+  color: var(--color-text-muted);
+  text-align: left;
+  margin-bottom: var(--spacing-md);
+  max-width: 70ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero .subtitle {
+  font-size: 1rem;
+  color: var(--color-text-muted);
+  margin: 0 0 var(--spacing-lg) 0;
+  font-weight: 700;
+  text-align: center;
+  max-width: none;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero .subtitle a {
+  color: var(--color-teal);
+  font-weight: 700;
+}
+
+.hero .subtitle a:hover {
+  color: var(--color-gold);
+}
+
+/* ========================================
+   Sections
+   ======================================== */
+
+.section {
+  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-lg);
+  background: var(--color-bg-card);
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.section h2 {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--color-gold);
+  margin: 0 0 var(--spacing-lg) 0;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+
+/* ========================================
+   Movie Posters Grid
+   ======================================== */
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 15px;
+  margin: var(--spacing-md) 0;
+  max-width: 100%;
+}
+
+/* Mobile 3-column grid */
+@media (max-width: 768px) {
+  .movies {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  
+  .movie {
+    min-height: 120px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .movies {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  
+  .movie {
+    min-height: 100px;
+  }
+  
+  .movie-title {
+    font-size: 0.75rem;
+  }
+  
+  .movie-year {
+    font-size: 0.7rem;
+  }
+}
+
+.movie {
+  position: relative;
+  background: var(--color-bg-light);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  aspect-ratio: 2/3;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  cursor: pointer;
+}
+
+.movie:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.movie img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.movie-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.98) 0%, rgba(0, 0, 0, 0.85) 30%, rgba(0, 0, 0, 0.5) 60%, transparent 100%);
+  color: var(--color-text-white);
+  padding: 18px 15px 15px;
+  opacity: 0;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.movie:hover .movie-info {
+  opacity: 1;
+}
+
+.movie-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.movie-link:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.movie-title {
+  font-family: var(--font-serif);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  line-height: 1.3;
+}
+
+.movie-year {
+  font-size: 0.75rem;
+  color: var(--color-gold);
+  margin: 0;
+}
+
+/* ========================================
+   Publications
+   ======================================== */
+
+.pub {
+  margin: var(--spacing-sm) 0;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  background: var(--color-bg-pub);
+  border-radius: var(--border-radius-sm);
+  border-left: 3px solid var(--color-gold);
+}
+
+.pub-title {
+  font-family: var(--font-serif);
+  font-size: 1.05rem;
+  color: var(--color-gold-light);
+  margin: var(--spacing-xs) 0 var(--spacing-xs) 0;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.pub-authors {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin: 0 0 var(--spacing-xs) 0;
+  line-height: 1.5;
+}
+
+.pub strong {
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+.pub-venue {
+  color: var(--color-text-subtle);
+  font-size: 0.85rem;
+  font-style: italic;
+  margin: 0 0 var(--spacing-xs) 0;
+}
+
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin: var(--spacing-xs) 0;
+}
+
+.pub-links a {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(212, 175, 55, 0.1);
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: var(--color-teal);
+  transition: all 0.2s ease;
+}
+
+.pub-links a:hover {
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--color-gold);
+}
+
+/* ========================================
+   Contact / Footer
+   ======================================== */
+
+.contact {
+  text-align: center;
+  margin: var(--spacing-xl) 0;
+  padding: var(--spacing-lg);
+  color: var(--color-text-subtle);
+  font-size: 0.95rem;
+}
+
+.contact a {
+  color: var(--color-teal);
+  font-weight: 500;
+}
+
+.contact a:hover {
+  color: var(--color-gold);
+}
+
+/* ========================================
+   Animations
+   ======================================== */
+
+.fade {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================================
+   Responsive Adjustments
+   ======================================== */
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+    font-size: 14px;
+  }
+  
+  .hero {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+  
+  .hero img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .section {
+    padding: var(--spacing-md);
+    margin: var(--spacing-md) 0;
+  }
+  
+  .section h2 {
+    font-size: 1.4rem;
+  }
+  
+  .pub {
+    padding: var(--spacing-sm);
+  }
+  
+  .pub-title {
+    font-size: 0.95rem;
+  }
+  
+  .pub-authors {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 12px;
+    font-size: 13px;
+  }
+  
+  .hero img {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+  
+  .section {
+    padding: var(--spacing-sm);
+    border-radius: 8px;
+  }
+}
+
+/* ========================================
+   Accessibility
+   ======================================== */
+
+/* Focus states */
+a:focus,
+.movie-link:focus {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --color-gold: #ffd700;
+    --color-teal: #00bcd4;
+    --color-text-muted: #ffffff;
+  }
+}

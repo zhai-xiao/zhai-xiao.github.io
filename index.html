@@ -12,301 +12,23 @@
   <meta property="og:description" content="Senior Research Engineer at Weta FX, bringing digital worlds to life through cutting-edge physics simulation">
   <meta property="og:image" content="/assets/img/logo.jpeg">
   <meta name="twitter:card" content="summary_large_image">
-<style>
-/* Compact cinematic design */
-body {
-  background: 
-    /* Light leakage effects */
-    radial-gradient(ellipse at 15% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 30%),
-    radial-gradient(ellipse at 85% 80%, rgba(58, 127, 143, 0.06) 0%, transparent 25%),
-    radial-gradient(ellipse at 50% 10%, rgba(255, 255, 255, 0.03) 0%, transparent 20%),
-    linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-  background-attachment: fixed;
-  color: #ffffff;
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  line-height: 1.5;
-  margin: 0;
-  padding: 15px;
-  font-size: 14px;
-  text-align: center;
-  
-  /* Film grain texture effect */
-  position: relative;
-}
-
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    /* Light leakage effects */
-    radial-gradient(ellipse at 15% 20%, rgba(212, 175, 55, 0.08) 0%, transparent 30%),
-    radial-gradient(ellipse at 85% 80%, rgba(58, 127, 143, 0.06) 0%, transparent 25%),
-    radial-gradient(ellipse at 50% 10%, rgba(255, 255, 255, 0.03) 0%, transparent 20%);
-  pointer-events: none;
-  z-index: -1;
-}
-
-@media (max-width: 768px) {
-  body { padding: 10px; font-size: 13px; }
-}
-
-.container {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: left;
-}
-
-.hero {
-  text-align: center;
-  padding: 30px 0;
-  margin-bottom: 25px;
-}
-
-.hero h1, .hero p {
-  text-align: center;
-}
-
-.hero img {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 3px solid #d4af37;
-  margin-bottom: 20px;
-}
-
-.hero h1 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: clamp(2rem, 5vw, 3rem);
-  font-weight: 900;
-  margin: 0 0 15px 0;
-  background: linear-gradient(135deg, #d4af37, #f4e5c2);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.hero p {
-  color: #cccccc;
-  max-width: 700px;
-  margin: 0 auto 20px;
-  line-height: 1.6;
-  text-align: left;
-}
-
-.hero a {
-  color: #3a7f8f;
-}
-
-.section {
-  margin: 30px 0;
-  padding: 20px;
-  background: rgba(45, 45, 45, 0.6);
-  border-radius: 12px;
-  backdrop-filter: blur(10px) brightness(1.1);
-  border: 1px solid rgba(212, 175, 55, 0.2);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.section h2 {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #d4af37;
-  margin: 0 0 15px 0;
-  text-align: center;
-}
-
-.movies {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 10px;
-  margin: 15px 0;
-  max-width: 100%;
-}
-
-@media (max-width: 600px) {
-  .movies {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 8px;
-  }
-}
-
-.movie {
-  position: relative;
-  background: #2d2d2d;
-  border-radius: 8px;
-  overflow: hidden;
-  aspect-ratio: 2/3;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.movie:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-}
-
-.movie img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.movie-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(transparent, rgba(0,0,0,0.9));
-  color: #ffffff;
-  padding: 15px;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
-
-.movie:hover .movie-info {
-  opacity: 1;
-}
-
-.movie-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-.movie-link:hover {
-  text-decoration: none;
-  color: inherit;
-}
-
-.movie-title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 0.95rem;
-  font-weight: 700;
-  margin: 0 0 5px 0;
-}
-
-.movie-year {
-  font-size: 0.8rem;
-  color: #d4af37;
-  margin: 0;
-}
-
-.movie-list {
-  margin: 25px 0;
-}
-
-.movie-list li {
-  margin: 12px 0;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-}
-
-.movie-list a {
-  color: #cccccc;
-  text-decoration: none;
-  font-size: 0.95rem;
-  transition: color 0.2s ease;
-}
-
-.movie-list a:hover {
-  color: #d4af37;
-}
-
-.pub {
-  margin: 20px 0;
-  padding: 15px;
-  background: rgba(26, 26, 26, 0.6);
-  border-radius: 8px;
-  border-left: 3px solid #d4af37;
-}
-
-.pub-title {
-  font-family: 'Playfair Display', Georgia, serif;
-  font-size: 1rem;
-  color: #f4e5c2;
-  margin: 0 0 8px 0;
-  font-weight: 700;
-}
-
-.pub-authors {
-  color: #cccccc;
-  font-size: 0.85rem;
-  margin: 0 0 8px 0;
-  line-height: 1.4;
-}
-
-.pub-venue {
-  color: #999999;
-  font-size: 0.8rem;
-  font-style: italic;
-  margin: 0 0 10px 0;
-}
-
-.pub-links {
-  margin: 8px 0;
-}
-
-.pub-links a {
-  color: #3a7f8f;
-  text-decoration: none;
-  margin-right: 15px;
-  font-size: 0.8rem;
-  transition: color 0.2s ease;
-}
-
-.pub-links a:hover {
-  color: #d4af37;
-}
-
-.contact {
-  text-align: center;
-  margin: 40px 0;
-  padding: 20px;
-  color: #999999;
-  font-size: 0.9rem;
-}
-
-.contact a {
-  color: #3a7f8f;
-  text-decoration: none;
-}
-
-.contact a:hover {
-  color: #d4af37;
-}
-
-.fade {
-  animation: fadeIn 0.6s ease forwards;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-</style>
-
-<div class="container">
-  <section class="hero fade">
-    <img src="/assets/img/logo.jpeg" alt="Xiao Zhai">
-    <h1 style="margin-bottom: 0">Xiao Zhai</h1>
-    <h1 style="text-align: center; font-size: 1rem;">
-      PhD, Simulation Research Engineer @ <a href="https://www.wetafx.co.nz/">Weta FX</a>
-    </h1>
-    <p>
-      I develop simulation technologies behind the invisible VFX, specializing in computational elastic solid mechanics and high-fidelity multi-physics simulation technologies for major film productions like <a href="https://www.avatar.com/movies/avatar-the-way-of-water">Avatar: The Way of Water</a>. As a Simulation R&D Tech Lead, I help create the physics tools that make virtual environments interact naturally with artist creations.
-    </p>
-    <p>
-      One of my key contributions was helping design, develop and maintain our multiphysics framework <a href="https://history.siggraph.org/learning/loki-a-unified-multiphysics-simulation-framework-for-production-by-lesser-stomakhin-daviet-wretborn-edholm-et-al/">Loki</a>, and integrate
-      it into Weta's <a href="https://history.siggraph.org/learning/avatar-the-way-of-cloth-hair-and-coupled-simulation-by-zhai-schweickart-ilinov-wretborn-stomakhin-et-al/">production pipeline</a>. This unified system allows different simulation elements to work together, greatly expanding the creative possibilities for filmmakers.
-    </p>
-    <p>
-      I hold a PhD in physics-based simulation from <a href="https://ev.buaa.edu.cn/">Beihang University</a>. Feel free to connect on <a href="https://www.linkedin.com/in/zhai-xiao/">LinkedIn</a>.
-    </p>
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <div class="container">
+    <section class="hero fade">
+      <img src="/assets/img/logo.jpeg" alt="Xiao Zhai">
+      <h1>Xiao Zhai</h1>
+      <p class="subtitle">PhD, Simulation Research Engineer @ <a href="https://www.wetafx.co.nz/">Weta FX</a></p>
+      <p>
+        I develop simulation technologies behind the invisible VFX, specializing in computational elastic solid mechanics and high-fidelity multi-physics technologies for major film productions like <a href="https://www.avatar.com/movies/avatar-the-way-of-water">Avatar: The Way of Water</a>. As a Simulation R&D Tech Lead, I create physics tools that enable virtual environments to interact naturally with artist creations.
+      </p>
+      <p>
+        A key contribution was co-designing and developing our multiphysics framework <a href="https://history.siggraph.org/learning/loki-a-unified-multiphysics-simulation-framework-for-production-by-lesser-stomakhin-daviet-wretborn-edholm-et-al/">Loki</a>, then integrating it into Weta's <a href="https://history.siggraph.org/learning/avatar-the-way-of-cloth-hair-and-coupled-simulation-by-zhai-schweickart-ilinov-wretborn-stomakhin-et-al/">production pipeline</a>. This unified system allows different simulation elements to work together, greatly expanding creative possibilities for filmmakers.
+      </p>
+      <p>
+        I hold a PhD in physics-based simulation from <a href="https://ev.buaa.edu.cn/">Beihang University</a>. Feel free to connect on <a href="https://www.linkedin.com/in/zhai-xiao/">LinkedIn</a>.
+      </p>
   </section>
 
   <section class="section fade">
@@ -395,12 +117,11 @@ body::before {
       </a>
       <a class="movie-link">
         <div class="movie">
-        <img src="/assets/img/posters/and-many-more-poster.svg" alt="And many more...">
-        <div class="movie-info">
-          <div class="movie-title">And many more...</div>
+          <img src="/assets/img/posters/and-many-more-poster.svg" alt="And many more...">
+          <div class="movie-info">
+            <div class="movie-title">And many more...</div>
+          </div>
         </div>
-      </div>
-      </div>
       </a>
   </section>
 
@@ -456,7 +177,7 @@ body::before {
   </section>
 
   <section class="section fade">
-    <h2>Publication</h2>
+    <h2>Publications</h2>
     
     <div class="pub">
       <div class="pub-title">Parallel Constraint Graph Partitioning and Coloring for Realtime Soft-Body Cutting</div>
@@ -570,12 +291,14 @@ body::before {
       </div>
     </div>
     
-    <p style="text-align: center; margin: 30px 0; color: #999999; font-size: 0.85rem;">
-      † Joint first authors.  * Corresponding authors.
+    <p class="centered" style="font-weight: 700; margin: 30px 0; color: var(--color-text-subtle); font-size: 0.85rem;">
+      † Joint first authors. * Corresponding authors.
     </p>
   </section>
 
   <footer class="contact fade">
-    <p style="margin-top: 10px;">© 2025 Xiao Zhai, PhD.</p>
+    <p style="margin-top: 10px;">© 2026 Xiao Zhai.</p>
   </footer>
-</div>
+  </div>
+</body>
+</html>
